@@ -2,6 +2,33 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<!-- <title>Contact Us</title>
+<style>
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style> -->
 </head>
 <body>
 <div id="menu">
@@ -56,12 +83,11 @@
 <br/>
 <br/>
 <br/>
-<img src="/imgbean.jpeg"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <img src="/images.jpeg">
+<img src="/imgbean.jpeg" width="450px" height="300px"> &nbsp&nbsp <img id="bean2" src="/images.jpeg" width="450px" height="300px">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br/>
 <br/>
-<br/>
-<img src="/download.jpeg">
+<img src="/download.jpeg" width="450px" height="300px"> &nbsp&nbsp <img src="/download (1).jpeg" width="450px" height="300px">
 </section>
 
 <section id="playlist" class="section">
@@ -185,7 +211,7 @@ and still in it's beginning and it aims to created greater control over data and
 
 </section>
 
-<section id="contact" class="section">
+<!-- <section id="contact" class="section">
 <br/>
 <br/>
 <br/>
@@ -195,7 +221,21 @@ and still in it's beginning and it aims to created greater control over data and
 <br/>
 <br/>
 <br/>
-</section>
+</section> -->
+
+<br/>
+<br/>
+    <div class="email-form">
+        <h2>Contact Us</h2>
+        <br/>
+        <form action="mailto:" method="post" enctype="text/plain">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
 
 
 <script type="text/javascript">
